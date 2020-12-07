@@ -64,11 +64,15 @@ const handleSubmit = e => {
   symbol = document.getElementById('js-symbol-input').value;
   fetchData().then(data => {
     profileData = data[0];
+
+    // valid stock symbol
     if(profileData) {
       profile.style.display = 'block';
       errorMessage.style.display = 'none';
       document.getElementById('js-container').innerHTML = generateDisplayHTML();
     }
+
+    // invalid stock symbol
     else {
       profile.style.display = 'none';
       errorMessage.style.display = 'block';
