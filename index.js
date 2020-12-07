@@ -78,7 +78,6 @@ const handleSubmit = e => {
       profile.style.display = 'none';
       errorMessage.style.display = 'block';
       errorMessage.innerHTML = 'There appears to be an error. Try entering a different symbol.';
-      
     }
   });
 }
