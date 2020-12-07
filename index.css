@@ -1,0 +1,50 @@
+.start-hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+#js-symbol-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#js-symbol-form label, input {
+  margin-right: 10px;
+}
+
+.error-message {
+  display: none;
+  text-align: center;
+}
+
+#js-company-profile {
+  padding: 20px;
+}
+
+.positive {
+  background-color: #63cf65;
+}
+
+.negative {
+  background-color: #d44242;
+}
+
+.field {
+  margin-bottom: 5px;
+}
+
+.key {
+  width: 150px;
+}
+
+.value {
+  width: 600px;
+}
