@@ -1,6 +1,7 @@
 const form = document.getElementById('js-symbol-form');
 const profile = document.getElementById('js-company-profile');
 const errorMessage = document.getElementById('js-error-message');
+const displayContainer = document.getElementById('js-container');
 let symbol;
 let profileData;
 
@@ -69,14 +70,14 @@ const handleSubmit = e => {
     if(profileData) {
       profile.style.display = 'block';
       errorMessage.style.display = 'none';
-      document.getElementById('js-container').innerHTML = generateDisplayHTML();
+      displayContainer.innerHTML = generateDisplayHTML();
     }
 
     // invalid stock symbol
     else {
       profile.style.display = 'none';
       errorMessage.style.display = 'block';
-      document.getElementById('js-error-message').innerHTML = 'There appears to be an error. Try entering a different symbol.';
+      errorMessage.innerHTML = 'There appears to be an error. Try entering a different symbol.';
       
     }
   });
